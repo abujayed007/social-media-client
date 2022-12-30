@@ -8,7 +8,7 @@ const EditModal = ({ editInfo }) => {
     console.log(editInfo)
     const handleSubmit = id =>{
         
-        fetch(`http://localhost:5000/users/${id}`,{
+        fetch(`https://social-media-server-swart.vercel.app/users/${id}`,{
             method:'PUT',
             headers:{
                 'content-type' : 'application/json'

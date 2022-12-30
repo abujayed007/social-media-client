@@ -2,8 +2,8 @@ import React from 'react';
 const LeftSide = () => {
     return (
         <div>
+            <h2 className='text-2xl font-bold my-5 px-10 text-blue-500'>Features</h2>
             <div className='lg:grid lg:grid-cols-1 md:grid md:grid-cols-2 grid grid-cols-4 lg:px-10  px-12 text-blue-500 font-semibold'>
-            <h2 className='text-2xl font-bold my-5'>Features</h2>
                 <h2 className='text-lg col'>Friends</h2>
                 <h2 className='text-lg col'>Settings</h2>
                 <h2 className='text-lg col'>Request</h2>

@@ -44,14 +44,14 @@ const routes = createBrowserRouter([
                 path:'/posts/:id',
                 element:<PostDetails></PostDetails>,
                 loader: ({params}) =>{
-                    return fetch(`http://localhost:5000/posts/${params.id}`)
+                    return fetch(`https://social-media-server-swart.vercel.app/posts/${params.id}`)
                 }
             },
             {
                 path:'/update/:id',
                 element:<EditModal></EditModal>,
                 loader: ({params}) =>{
-                    return fetch(`http://localhost:5000/users/${params.id}`)
+                    return fetch(`https://social-media-server-swart.vercel.app/users/${params.id}`)
                 }
             }
         ]

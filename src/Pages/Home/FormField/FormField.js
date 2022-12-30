@@ -29,7 +29,7 @@ const FormField = () => {
                         img: imgData.data.url,
                         status: data.text,
                     }
-                    fetch('http://localhost:5000/posts', {
+                    fetch('https://social-media-server-swart.vercel.app/posts', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

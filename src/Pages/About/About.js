@@ -8,7 +8,7 @@ const About = () => {
     const [userInfo, setUserInfo] = useState([])
     const [editInfo, setEditInfo] = useState(null)
     useEffect(()=>{
-        fetch(`http://localhost:5000/users?email=${user?.email}`)
+        fetch(`https://social-media-server-swart.vercel.app/users?email=${user?.email}`)
         .then(res => res.json())
         .then(data =>{
             setUserInfo(data)
